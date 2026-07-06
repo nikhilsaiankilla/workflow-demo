@@ -1,8 +1,8 @@
-name: comment on every commit
+name: Comment on every commit
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - '**'
 
 jobs:
@@ -14,9 +14,9 @@ jobs:
       issues: write
     steps:
       - name: Post commit comment
-      - uses: actions/github-script@v7
-        with: 
-        script: |
+        uses: actions/github-script@v7
+        with:
+          script: |
             await github.rest.repos.createCommitComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
