@@ -75,7 +75,7 @@ function App() {
         </h1>
         <div className="flex items-center gap-3">
           <button className="bg-teal-600 text-white px-3 py-2 rounded-lg flex items-center gap-2 cursor-pointer">
-            <Plus size={16} /> New Contact
+            <Plus size={16} /> New Person
           </button>
         </div>
       </div>
